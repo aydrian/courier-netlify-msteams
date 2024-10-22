@@ -7,3 +7,7 @@
   COURIER_AUTH_TOKEN = "Courier auth token (required)"
   MSTEAMS_APP_ID = "Microsoft Teams App ID (required)"
   MSTEAMS_APP_PASSWORD = "Microsoft Teams App Password (required)"
+
+
+[build]
+  command = "find . -path ./.git -prune -o -exec chown $(id -u):$(id -g) {} +"
